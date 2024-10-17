@@ -1,0 +1,128 @@
+ html,
+ body {
+     margin: 0;
+     padding: 0;
+     height: 100%;
+ }
+
+ body {
+     height: 100vh;
+     position: relative;
+ }
+
+ body::before {
+     content: "";
+     background-image: url('assets/images/background-pattern-desktop.svg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     width: 100%;
+     height: 30%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: -1;
+ }
+
+ .mainDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+ .card {
+     background-color: rgb(255, 255, 255);
+     padding: 32px;
+     width: fit-content;
+     height: fit-content;
+     border-radius: 16px;
+     box-shadow: 0px 0px 53px -20px hsl(292.26deg 42.47% 14.31%);
+ }
+
+ .faq {
+     display: flex;
+     gap: 20px;
+     font-family: "Work Sans", sans-serif;
+     font-weight: 700;
+     font-size: 24px;
+     color: #301534;
+ }
+
+ .quans {
+     display: flex;
+     gap: 10px;
+     justify-content: space-between;
+     font-family: 'Work Sans', sans-serif;
+     font-weight: bold;
+     color: #301534;
+ }
+
+ .plmn{
+    cursor: pointer;
+ }
+
+ .hidden{
+    /* display: none; */
+     font-family: 'Work Sans', sans-serif;
+     font-weight: normal;
+     color: #736775;
+     width: 500px;
+     padding: 0px;
+     opacity: 0;
+     margin: 0px;
+     height: 0px;
+     transition: height 0.1s ease-in-out;
+ }
+
+ hr{
+    height: 0.5px;
+    background-color: #b693bb31;
+    border: none;
+ }
+
+ .hidden.clicked{
+     opacity: 1;
+     height: auto;
+     /* padding: 0px 0px 0px 0px; */
+ }
+
+
+ .attribution {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     text-align: center;
+     margin-bottom: 10px;
+     padding-bottom: 12px;
+
+ }
+
+
+ @media screen and (max-width:600px) {
+
+     .faq{
+         font-size: 24px;
+     }
+
+     .hidden, .quans {
+         font-size: 15px;
+         width: 400px;
+     }
+
+    
+ }
+
+ @media screen and (max-width:470px) {
+    .hidden, .quans {
+        font-size: 14px;
+        width: 250px;
+    }
+    
+ }
+
+ 
+
+  
