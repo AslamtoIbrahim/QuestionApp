@@ -11,6 +11,7 @@ function plusOne(index) {
         img[index].src = "assets/images/icon-plus.svg"
     }
     
+    
 
 }
 
